@@ -1,0 +1,7 @@
+project:
+  title: "unl_symposium_2025_gams"
+  type: website
+  output-dir: docs
+
+editor: visual
+

@@ -1,7 +1,7 @@
 ---
 title: "Longitudinal study of concussion-related dMRI changes in college athletes"
 author: Nathan M. Muncy
-date: 2025-04-16
+date: 2025-04-15
 format: 
   revealjs:
     footer: "dMRI modeling with HGAMs"
@@ -25,10 +25,10 @@ library(tidyverse)
 ::::: {.column width="50%"}
 :::: {style="font-size: 65%;"}
 ::: incremental
--   1.6-3.8 million sports-related TBIs per year, mTBI associated with negative MRI findings.
+-   1.6-3.8 million traumatic brain injuries per year^1^.
+-   Mild traumatic brain injuries (mTBI) associated with negative MRI findings.
 -   Histologically, mTBI associated with traumatic axonal injury.
-    -   Damaged axolemma, axonal beading, axotomy (or recovery).
--   DWI MRI is sensitive to changes in axonal water permeability, diffusion.
+    -   Damaged axolemma, axonal beading, axotomy (or recovery)^2^.
 :::
 ::::
 :::::
@@ -43,14 +43,14 @@ library(tidyverse)
 :::::::: columns
 ::::: {.column width="50%"}
 :::: {style="font-size: 75%;"}
-Modeling within-tract DWI data complicated due to:
+Diffusion-weighted MRI is sensitive to changes in axonal water permeability, diffusion. Modeling within-tract DWI data is complicated:
 
 ::: incremental
--   Interdependent values
--   Non-linear global, group trends
--   Semi-parametric distributions
--   Multiple "point-wise" comparisons
--   Proposal: Hierarchical Generalize Additive Models resolve these issues
+-   Interdependent values,
+-   Non-linear global, group trends,
+-   Semi-parametric distributions,
+-   Multiple "point-wise" comparisons.
+-   Proposal: Hierarchical Generalized Additive Models resolve these issues.
 :::
 ::::
 :::::
@@ -66,15 +66,15 @@ Modeling within-tract DWI data complicated due to:
 
 ## [Hierarchical Generalized Additive Models]{.r-fit-text} {background-image="media/background.jpg"}
 
-Generalization of general linear models:
+Extension of general linear models:
 
 ::: incremental
--   Transformation families, link function for semi-parametric distributions
--   Fit data with set of basis functions (e.g. splines)
+-   Transformation families, link function for semi-parametric distributions.
+-   Fit data with set of basis functions (e.g. splines).
 -   N-dimensional - facilitates longitudinal, whole-brain analyses:
-    -   Avoid multiple track comparisons
-    -   Pool within-subject variance across tracts and time
-    -   Support multi-modal models
+    -   Avoid multiple track comparisons,
+    -   Pool within-subject variance across tracts and time,
+    -   Support multi-modal models.
 :::
 
 ## [Hierarchical Generalized Additive Models]{.r-fit-text} {background-image="media/background.jpg"}
@@ -127,9 +127,9 @@ Clinical:
 ::::: {.column width="50%"}
 :::: incremental
 ::: {style="font-size: 75%;"}
--   Ability to model all data in single model
--   Identify tracts which differ from Base at Post (e.g. Blue, CCsf)
--   Identify tracts which return to Base by RTP
+-   Ability to model all data in single model.
+-   Identify tracts which differ from Base at Post (e.g. Blue, CCsf).
+-   Identify tracts which return to Base by RTP.
 :::
 ::::
 :::::
@@ -145,11 +145,11 @@ Clinical:
 ::::: {.column width="50%"}
 :::: incremental
 ::: {style="font-size: 75%;"}
--   Right cingulum shows decreased FA near node 35 (top left)
--   Increased RD and MD in same region, no difference in AD
--   Suggests increased axolemmal permeability
--   Additional evidence for recovery by RTP
--   Also note evidence of cytotoxic edema around node 65
+-   Right cingulum shows decreased FA near node 35 (top left).
+-   Increased RD and MD in same region, no difference in AD.
+-   Suggests increased axolemmal permeability.
+-   Additional evidence for recovery by RTP.
+-   Also note evidence of cytotoxic edema around node 65.
 :::
 ::::
 :::::
@@ -165,9 +165,9 @@ Clinical:
 ::::: {.column width="40%"}
 :::: incremental
 ::: {style="font-size: 75%;"}
--   Poor visual motor performance relates to low FA values at Post in CC occipital
--   More symptoms related to low FA values in CC superior parietal
--   These interactions are no longer present at RTP
+-   Poor visual motor performance relates to low FA values at Post in CC occipital.
+-   More symptoms related to low FA values in CC superior parietal.
+-   These interactions are no longer present at RTP.
 :::
 ::::
 :::::
@@ -180,13 +180,14 @@ Clinical:
 ## Discussion {background-image="media/background.jpg"}
 
 ::: incremental
--   HGAMs sensitively model complex, high-dimensional data with non-linear interactions.
-    -   Facilitate whole-brain, longitudinal analyses
--   Longitudinal tract scalar analyses elucidate nature of injury
--   Tensor product interaction smooths allow for sensitive, multimodal analyses
-    -   Ability to link changes in tissue to assessment outcomes
+-   Hierarchical generalized additive models sensitively model complex, high-dimensional data with non-linear interactions.
+    -   Facilitate whole-brain, longitudinal analyses.
+-   Longitudinal tract scalar analyses elucidate nature of injury.
+-   Tensor product interaction smooths allow for sensitive, multimodal analyses.
+    -   Ability to link changes in tissue to assessment outcomes.
 :::
 
 ## Citations {background-image="media/background.jpg"}
 
--   Johnson, V. E., Stewart, W., & Smith, D. H. (2013). Axonal pathology in traumatic brain injury. Experimental neurology, 246, 35-43.
+1)  Langlois, J. A., Rutland-Brown, W., & Wald, M. M. (2006). The epidemiology and impact of traumatic brain injury: a brief overview. The Journal of head trauma rehabilitation, 21(5), 375-378.
+2)  Johnson, V. E., Stewart, W., & Smith, D. H. (2013). Axonal pathology in traumatic brain injury. Experimental neurology, 246, 35-43.

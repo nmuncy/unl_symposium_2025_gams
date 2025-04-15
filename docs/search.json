@@ -4,21 +4,21 @@
     "href": "unl_symposium_2025_gams.html#background",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Background",
-    "text": "Background\n\n\n\n\n\n1.6-3.8 million sports-related TBIs per year, mTBI associated with negative MRI findings.\nHistologically, mTBI associated with traumatic axonal injury.\n\nDamaged axolemma, axonal beading, axotomy (or recovery).\n\nDWI MRI is sensitive to changes in axonal water permeability, diffusion."
+    "text": "Background\n\n\n\n\n\n1.6-3.8 million traumatic brain injuries per year1.\nMild traumatic brain injuries (mTBI) associated with negative MRI findings.\nHistologically, mTBI associated with traumatic axonal injury.\n\nDamaged axolemma, axonal beading, axotomy (or recovery)2."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#issue-and-proposal",
     "href": "unl_symposium_2025_gams.html#issue-and-proposal",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Issue and Proposal",
-    "text": "Issue and Proposal\n\n\n\nModeling within-tract DWI data complicated due to:\n\n\nInterdependent values\nNon-linear global, group trends\nSemi-parametric distributions\nMultiple “point-wise” comparisons\nProposal: Hierarchical Generalize Additive Models resolve these issues"
+    "text": "Issue and Proposal\n\n\n\nDiffusion-weighted MRI is sensitive to changes in axonal water permeability, diffusion. Modeling within-tract DWI data is complicated:\n\n\nInterdependent values,\nNon-linear global, group trends,\nSemi-parametric distributions,\nMultiple “point-wise” comparisons.\nProposal: Hierarchical Generalized Additive Models resolve these issues."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#hierarchical-generalized-additive-models",
     "href": "unl_symposium_2025_gams.html#hierarchical-generalized-additive-models",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Hierarchical Generalized Additive Models",
-    "text": "Hierarchical Generalized Additive Models\nGeneralization of general linear models:\n\n\nTransformation families, link function for semi-parametric distributions\nFit data with set of basis functions (e.g. splines)\nN-dimensional - facilitates longitudinal, whole-brain analyses:\n\nAvoid multiple track comparisons\nPool within-subject variance across tracts and time\nSupport multi-modal models"
+    "text": "Hierarchical Generalized Additive Models\nExtension of general linear models:\n\n\nTransformation families, link function for semi-parametric distributions.\nFit data with set of basis functions (e.g. splines).\nN-dimensional - facilitates longitudinal, whole-brain analyses:\n\nAvoid multiple track comparisons,\nPool within-subject variance across tracts and time,\nSupport multi-modal models."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#hierarchical-generalized-additive-models-1",
@@ -46,34 +46,34 @@
     "href": "unl_symposium_2025_gams.html#longitudinal-whole-brain-analyses-implicate-injury-in-multiple-tracts",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Longitudinal Whole-Brain Analyses Implicate Injury in Multiple Tracts",
-    "text": "Longitudinal Whole-Brain Analyses Implicate Injury in Multiple Tracts\n\n\n\n\n\nAbility to model all data in single model\nIdentify tracts which differ from Base at Post (e.g. Blue, CCsf)\nIdentify tracts which return to Base by RTP\n\n\n\n\n\n\n\nHGAM difference from Base smooths for callosal tracts."
+    "text": "Longitudinal Whole-Brain Analyses Implicate Injury in Multiple Tracts\n\n\n\n\n\nAbility to model all data in single model.\nIdentify tracts which differ from Base at Post (e.g. Blue, CCsf).\nIdentify tracts which return to Base by RTP.\n\n\n\n\n\n\n\nHGAM difference from Base smooths for callosal tracts."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#tract-specific-analyses-identify-source-of-fa-change",
     "href": "unl_symposium_2025_gams.html#tract-specific-analyses-identify-source-of-fa-change",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Tract-Specific Analyses Identify Source of FA Change",
-    "text": "Tract-Specific Analyses Identify Source of FA Change\n\n\n\n\n\nRight cingulum shows decreased FA near node 35 (top left)\nIncreased RD and MD in same region, no difference in AD\nSuggests increased axolemmal permeability\nAdditional evidence for recovery by RTP\nAlso note evidence of cytotoxic edema around node 65\n\n\n\n\n\n\n\nLongitudinal tract models for each diffusion scalar."
+    "text": "Tract-Specific Analyses Identify Source of FA Change\n\n\n\n\n\nRight cingulum shows decreased FA near node 35 (top left).\nIncreased RD and MD in same region, no difference in AD.\nSuggests increased axolemmal permeability.\nAdditional evidence for recovery by RTP.\nAlso note evidence of cytotoxic edema around node 65.\n\n\n\n\n\n\n\nLongitudinal tract models for each diffusion scalar."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#tract-fa-differences-relate-to-changes-in-impact",
     "href": "unl_symposium_2025_gams.html#tract-fa-differences-relate-to-changes-in-impact",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Tract FA Differences Relate to Changes in ImPACT",
-    "text": "Tract FA Differences Relate to Changes in ImPACT\n\n\n\n\n\nPoor visual motor performance relates to low FA values at Post in CC occipital\nMore symptoms related to low FA values in CC superior parietal\nThese interactions are no longer present at RTP\n\n\n\n\n\n\n\nImPACT scores relate to FA at Post but not RTP."
+    "text": "Tract FA Differences Relate to Changes in ImPACT\n\n\n\n\n\nPoor visual motor performance relates to low FA values at Post in CC occipital.\nMore symptoms related to low FA values in CC superior parietal.\nThese interactions are no longer present at RTP.\n\n\n\n\n\n\n\nImPACT scores relate to FA at Post but not RTP."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#discussion",
     "href": "unl_symposium_2025_gams.html#discussion",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Discussion",
-    "text": "Discussion\n\n\nHGAMs sensitively model complex, high-dimensional data with non-linear interactions.\n\nFacilitate whole-brain, longitudinal analyses\n\nLongitudinal tract scalar analyses elucidate nature of injury\nTensor product interaction smooths allow for sensitive, multimodal analyses\n\nAbility to link changes in tissue to assessment outcomes"
+    "text": "Discussion\n\n\nHierarchical generalized additive models sensitively model complex, high-dimensional data with non-linear interactions.\n\nFacilitate whole-brain, longitudinal analyses.\n\nLongitudinal tract scalar analyses elucidate nature of injury.\nTensor product interaction smooths allow for sensitive, multimodal analyses.\n\nAbility to link changes in tissue to assessment outcomes."
   },
   {
     "objectID": "unl_symposium_2025_gams.html#citations",
     "href": "unl_symposium_2025_gams.html#citations",
     "title": "Longitudinal study of concussion-related dMRI changes in college athletes",
     "section": "Citations",
-    "text": "Citations\n\nJohnson, V. E., Stewart, W., & Smith, D. H. (2013). Axonal pathology in traumatic brain injury. Experimental neurology, 246, 35-43."
+    "text": "Citations\n\nLanglois, J. A., Rutland-Brown, W., & Wald, M. M. (2006). The epidemiology and impact of traumatic brain injury: a brief overview. The Journal of head trauma rehabilitation, 21(5), 375-378.\nJohnson, V. E., Stewart, W., & Smith, D. H. (2013). Axonal pathology in traumatic brain injury. Experimental neurology, 246, 35-43."
   }
 ]

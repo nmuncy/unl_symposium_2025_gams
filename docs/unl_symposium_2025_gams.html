@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Nathan M. Muncy">
-  <meta name="dcterms.date" content="2025-04-16">
+  <meta name="dcterms.date" content="2025-04-15">
   <title>unl_symposium_2025_gams – Longitudinal study of concussion-related dMRI changes in college athletes</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,7 +138,7 @@ Nathan M. Muncy
 </div>
 </div>
 
-  <p class="date">2025-04-16</p>
+  <p class="date">2025-04-15</p>
 </section>
 <section id="background" class="slide level2" data-background-image="media/background.jpg">
 <h2>Background</h2>
@@ -147,12 +147,12 @@ Nathan M. Muncy
 <div style="font-size: 65%;">
 <div>
 <ul>
-<li class="fragment">1.6-3.8 million sports-related TBIs per year, mTBI associated with negative MRI findings.</li>
+<li class="fragment">1.6-3.8 million traumatic brain injuries per year<sup>1</sup>.</li>
+<li class="fragment">Mild traumatic brain injuries (mTBI) associated with negative MRI findings.</li>
 <li class="fragment">Histologically, mTBI associated with traumatic axonal injury.
 <ul>
-<li class="fragment">Damaged axolemma, axonal beading, axotomy (or recovery).</li>
+<li class="fragment">Damaged axolemma, axonal beading, axotomy (or recovery)<sup>2</sup>.</li>
 </ul></li>
-<li class="fragment">DWI MRI is sensitive to changes in axonal water permeability, diffusion.</li>
 </ul>
 </div>
 </div>
@@ -165,14 +165,14 @@ Nathan M. Muncy
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="font-size: 75%;">
-<p>Modeling within-tract DWI data complicated due to:</p>
+<p>Diffusion-weighted MRI is sensitive to changes in axonal water permeability, diffusion. Modeling within-tract DWI data is complicated:</p>
 <div>
 <ul>
-<li class="fragment">Interdependent values</li>
-<li class="fragment">Non-linear global, group trends</li>
-<li class="fragment">Semi-parametric distributions</li>
-<li class="fragment">Multiple “point-wise” comparisons</li>
-<li class="fragment">Proposal: Hierarchical Generalize Additive Models resolve these issues</li>
+<li class="fragment">Interdependent values,</li>
+<li class="fragment">Non-linear global, group trends,</li>
+<li class="fragment">Semi-parametric distributions,</li>
+<li class="fragment">Multiple “point-wise” comparisons.</li>
+<li class="fragment">Proposal: Hierarchical Generalized Additive Models resolve these issues.</li>
 </ul>
 </div>
 </div>
@@ -185,16 +185,16 @@ Nathan M. Muncy
 </section>
 <section id="hierarchical-generalized-additive-models" class="slide level2" data-background-image="media/background.jpg">
 <h2><span class="r-fit-text">Hierarchical Generalized Additive Models</span></h2>
-<p>Generalization of general linear models:</p>
+<p>Extension of general linear models:</p>
 <div>
 <ul>
-<li class="fragment">Transformation families, link function for semi-parametric distributions</li>
-<li class="fragment">Fit data with set of basis functions (e.g.&nbsp;splines)</li>
+<li class="fragment">Transformation families, link function for semi-parametric distributions.</li>
+<li class="fragment">Fit data with set of basis functions (e.g.&nbsp;splines).</li>
 <li class="fragment">N-dimensional - facilitates longitudinal, whole-brain analyses:
 <ul>
-<li class="fragment">Avoid multiple track comparisons</li>
-<li class="fragment">Pool within-subject variance across tracts and time</li>
-<li class="fragment">Support multi-modal models</li>
+<li class="fragment">Avoid multiple track comparisons,</li>
+<li class="fragment">Pool within-subject variance across tracts and time,</li>
+<li class="fragment">Support multi-modal models.</li>
 </ul></li>
 </ul>
 </div>
@@ -258,9 +258,9 @@ Nathan M. Muncy
 <div>
 <div style="font-size: 75%;">
 <ul>
-<li class="fragment">Ability to model all data in single model</li>
-<li class="fragment">Identify tracts which differ from Base at Post (e.g.&nbsp;Blue, CCsf)</li>
-<li class="fragment">Identify tracts which return to Base by RTP</li>
+<li class="fragment">Ability to model all data in single model.</li>
+<li class="fragment">Identify tracts which differ from Base at Post (e.g.&nbsp;Blue, CCsf).</li>
+<li class="fragment">Identify tracts which return to Base by RTP.</li>
 </ul>
 </div>
 </div>
@@ -280,11 +280,11 @@ Nathan M. Muncy
 <div>
 <div style="font-size: 75%;">
 <ul>
-<li class="fragment">Right cingulum shows decreased FA near node 35 (top left)</li>
-<li class="fragment">Increased RD and MD in same region, no difference in AD</li>
-<li class="fragment">Suggests increased axolemmal permeability</li>
-<li class="fragment">Additional evidence for recovery by RTP</li>
-<li class="fragment">Also note evidence of cytotoxic edema around node 65</li>
+<li class="fragment">Right cingulum shows decreased FA near node 35 (top left).</li>
+<li class="fragment">Increased RD and MD in same region, no difference in AD.</li>
+<li class="fragment">Suggests increased axolemmal permeability.</li>
+<li class="fragment">Additional evidence for recovery by RTP.</li>
+<li class="fragment">Also note evidence of cytotoxic edema around node 65.</li>
 </ul>
 </div>
 </div>
@@ -304,9 +304,9 @@ Nathan M. Muncy
 <div>
 <div style="font-size: 75%;">
 <ul>
-<li class="fragment">Poor visual motor performance relates to low FA values at Post in CC occipital</li>
-<li class="fragment">More symptoms related to low FA values in CC superior parietal</li>
-<li class="fragment">These interactions are no longer present at RTP</li>
+<li class="fragment">Poor visual motor performance relates to low FA values at Post in CC occipital.</li>
+<li class="fragment">More symptoms related to low FA values in CC superior parietal.</li>
+<li class="fragment">These interactions are no longer present at RTP.</li>
 </ul>
 </div>
 </div>
@@ -323,23 +323,24 @@ Nathan M. Muncy
 <h2>Discussion</h2>
 <div>
 <ul>
-<li class="fragment">HGAMs sensitively model complex, high-dimensional data with non-linear interactions.
+<li class="fragment">Hierarchical generalized additive models sensitively model complex, high-dimensional data with non-linear interactions.
 <ul>
-<li class="fragment">Facilitate whole-brain, longitudinal analyses</li>
+<li class="fragment">Facilitate whole-brain, longitudinal analyses.</li>
 </ul></li>
-<li class="fragment">Longitudinal tract scalar analyses elucidate nature of injury</li>
-<li class="fragment">Tensor product interaction smooths allow for sensitive, multimodal analyses
+<li class="fragment">Longitudinal tract scalar analyses elucidate nature of injury.</li>
+<li class="fragment">Tensor product interaction smooths allow for sensitive, multimodal analyses.
 <ul>
-<li class="fragment">Ability to link changes in tissue to assessment outcomes</li>
+<li class="fragment">Ability to link changes in tissue to assessment outcomes.</li>
 </ul></li>
 </ul>
 </div>
 </section>
 <section id="citations" class="slide level2" data-background-image="media/background.jpg">
 <h2>Citations</h2>
-<ul>
+<ol type="1">
+<li>Langlois, J. A., Rutland-Brown, W., &amp; Wald, M. M. (2006). The epidemiology and impact of traumatic brain injury: a brief overview. The Journal of head trauma rehabilitation, 21(5), 375-378.</li>
 <li>Johnson, V. E., Stewart, W., &amp; Smith, D. H. (2013). Axonal pathology in traumatic brain injury. Experimental neurology, 246, 35-43.</li>
-</ul>
+</ol>
 
 
 </section>
